@@ -1,8 +1,8 @@
-[![Latest Stable Version](http://poser.pugx.org/vildanbina/laravel-versions/v)](https://packagist.org/packages/vildanbina/laravel-versions)
-[![Total Downloads](http://poser.pugx.org/vildanbina/laravel-versions/downloads)](https://packagist.org/packages/vildanbina/laravel-versions)
-[![Latest Unstable Version](http://poser.pugx.org/vildanbina/laravel-versions/v/unstable)](https://packagist.org/packages/vildanbina/laravel-versions)
-[![License](http://poser.pugx.org/vildanbina/laravel-versions/license)](https://packagist.org/packages/vildanbina/laravel-versions)
-[![PHP Version Require](http://poser.pugx.org/vildanbina/laravel-versions/require/php)](https://packagist.org/packages/vildanbina/laravel-versions)
+[![Latest Stable Version](https://poser.pugx.org/vildanbina/laravel-versions/v)](https://packagist.org/packages/vildanbina/laravel-versions)
+[![Total Downloads](https://poser.pugx.org/vildanbina/laravel-versions/downloads)](https://packagist.org/packages/vildanbina/laravel-versions)
+[![Latest Unstable Version](https://poser.pugx.org/vildanbina/laravel-versions/v/unstable)](https://packagist.org/packages/vildanbina/laravel-versions)
+[![License](https://poser.pugx.org/vildanbina/laravel-versions/license)](https://packagist.org/packages/vildanbina/laravel-versions)
+[![PHP Version Require](https://poser.pugx.org/vildanbina/laravel-versions/require/php)](https://packagist.org/packages/vildanbina/laravel-versions)
 
 # Laravel Versions
 
