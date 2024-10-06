@@ -103,7 +103,7 @@ trait HasVersions
      */
     public function getPublishedAtColumn(): string
     {
-        return defined(static::class.'::PUBLISHED_AT')
+        return defined(static::class . '::PUBLISHED_AT')
             ? static::PUBLISHED_AT
             : config('versions.column_names.published_at', 'published_at');
     }
@@ -113,7 +113,7 @@ trait HasVersions
      */
     public function getIsCurrentColumn(): string
     {
-        return defined(static::class.'::IS_CURRENT')
+        return defined(static::class . '::IS_CURRENT')
             ? static::IS_CURRENT
             : config('versions.column_names.is_current', 'is_current');
     }
@@ -123,7 +123,7 @@ trait HasVersions
      */
     public function getIsPublishedColumn(): string
     {
-        return defined(static::class.'::IS_PUBLISHED')
+        return defined(static::class . '::IS_PUBLISHED')
             ? static::IS_PUBLISHED
             : config('versions.column_names.is_published', 'is_published');
     }
@@ -133,7 +133,7 @@ trait HasVersions
      */
     public function getUuidColumn(): string
     {
-        return defined(static::class.'::UUID')
+        return defined(static::class . '::UUID')
             ? static::UUID
             : config('versions.column_names.uuid', 'uuid');
     }
@@ -207,8 +207,6 @@ trait HasVersions
 
     /**
      * Scope a query to exclude a specific revision.
-     *
-     * @return void
      */
     public function scopeExcludeRevision(Builder $query, int|Model $exclude): Builder
     {
