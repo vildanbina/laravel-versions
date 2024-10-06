@@ -12,12 +12,12 @@ class VersionsServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/versions.php', 'drafts');
+        $this->mergeConfigFrom(__DIR__ . '/../config/versions.php', 'drafts');
     }
 
     public function register(): void
     {
-        $this->app->singleton(LaravelVersions::class, fn () => new LaravelVersions);
+        $this->app->singleton(LaravelVersions::class, fn () => new LaravelVersions());
         VersionsBlueprintMacros::register();
     }
 

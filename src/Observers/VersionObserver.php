@@ -24,9 +24,8 @@ class VersionObserver
     /**
      * Handle the "updating" event.
      *
-     * @return bool
      */
-    public function updating(Versionable $model)
+    public function updating(Versionable $model): bool
     {
         if ($model->isDirty() && $model->{$model->getIsPublishedColumn()}) {
             $model->fresh()->updateQuietly([$model->getIsCurrentColumn() => false]);

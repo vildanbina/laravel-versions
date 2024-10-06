@@ -2,7 +2,7 @@
 
 namespace VildanBina\LaravelVersions\Handlers;
 
-use Arr;
+use Illuminate\Support\Arr;
 use VildanBina\LaravelVersions\Contracts\Draftable;
 use VildanBina\LaravelVersions\Contracts\Versionable;
 
@@ -10,7 +10,8 @@ class DraftService implements Draftable
 {
     public function __construct(
         protected Versionable $model,
-    ) {}
+    ) {
+    }
 
     /**
      * Create a new draft of the model.
