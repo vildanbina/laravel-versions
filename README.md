@@ -28,7 +28,7 @@ composer require vildanbina/laravel-versions
 After installation, you need to publish the configuration file:
 
 ~~~bash
-php artisan vendor:publish --provider="VildanBina\LaravelVersions\DraftsServiceProvider"
+php artisan vendor:publish --provider="VildanBina\LaravelVersions\VersionsServiceProvider"
 ~~~
 
 ### Database Migrations
