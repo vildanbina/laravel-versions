@@ -380,6 +380,24 @@ $drafts = Post::whereCurrent()->wherePublished(false)->get();
 - **Customizing Excluded Columns**: Use the `$excludedColumns` property in your model to specify columns that should not
   be versioned, such as timestamps or other metadata.
 
+- **Handling Unique Constraints**: Currently, the package doesn't manage unique constraints automatically. To ensure uniqueness (e.g., for slugs) only for published records, you can use a composite unique index combining `slug` and `is_published`.
+
+    **Example Migration:**
+
+    ```php
+    return new class extends Migration {
+        public function up() {
+            Schema::create('posts', function (Blueprint $table) {
+                // other columns
+                $table->unique(['slug', 'is_published'], 'posts_slug_is_published_unique');
+            });
+        }
+    };
+    ```
+    This setup ensures that only published posts have unique slugs, while drafts can share the same slug without conflicts.
+    
+    This concise addition provides clear guidance on handling unique constraints and includes a practical example for developers to implement.
+
 ## Extensibility and Customization
 
 The package is designed to be flexible and can be customized to fit your application's needs.
